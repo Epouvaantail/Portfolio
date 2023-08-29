@@ -1,0 +1,419 @@
+html {
+	background-color: rgb(227, 227, 212);
+	font-family:'Rationale', sans-serif;
+	box-sizing: border-box;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 20px 10px 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 15px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+header {
+	display: flex;
+	align-items: center;
+	gap: 29%;
+	height: 60px; width:100%;
+	position: fixed;
+	backdrop-filter: blur(1px);
+	z-index: 1;
+}
+
+header:hover {
+	background-color: #ffffff82;
+	border-radius: 3px;
+}
+
+.navbar {
+	display: flex;
+	gap: 13px;
+}
+
+.navbar a:hover {
+	color: darkred;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+
+.logoKC{
+	display: flex;
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 53px;
+	font-weight: 600;
+}
+
+#K {
+	margin-right: -41px;
+}
+
+.logo-header img {
+	height: 33px;
+	filter: grayscale(100%);
+}
+
+.logo-header img:hover {
+	filter: invert(10%)
+}
+/* ---------------------------------------------------------------------------------- */
+.presentation {
+	margin: 200px 80px 200px 80px;
+	color: rgb(0, 0, 0);
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+}
+
+.presentation h1 {
+	margin-top: 0;
+	font-size: 100px;
+	font-weight: 400;
+	margin-bottom: 0;
+	border-top: 0;
+}
+
+.presentation h2 {
+	font-size: 50px;
+}
+
+.presentation button {
+	margin-left: 20px;
+	border-radius: 1;
+}
+
+.presentation button img{
+	height: 15px;
+}
+/* ---------------------------------------------------------------------------------- */
+
+.wrap {
+	position: relative;
+	width: 350px; height: 350px;
+}
+
+.minute, .heure {
+	position: absolute;
+	height: 100px; width: 6px;
+	margin: auto;
+	top: -28.5%; left: 0;	bottom: 0; right: 0;
+	transform-origin: bottom center;
+	transform: rotate(0deg);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+	background: black;
+}
+
+.minute {
+	position: absolute;
+	height: 130px; width: 4px;
+	top: -38%; left: 0;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+	transform: rotate(90deg);
+}
+
+.seconde {
+	position: absolute;
+	height: 90px; width: 2px;
+	margin: auto;
+	top: -26%; left: 0; bottom: 0; right: 0;
+	border-radius: 4px;
+	background: darkred;
+	transform-origin: bottom center;
+	transform: rotate(180deg);
+}
+
+.dot {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	width: 12px; height: 12px;
+	border-radius: 50%;
+	background: white;
+	border: 2px solid #1b1b1b;
+	border-radius: 50%;
+	margin: auto;
+}
+/* ---------------------------------------------------------------------------------- */
+.skills-career {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 40%;
+}
+
+.skills {
+	display: flex;
+	flex-direction: column;
+	gap: 20%;
+}
+
+#career{
+	border-top: 3px solid black;
+}
+
+h1  {
+	border-top: 3px solid black;
+}
+  
+li {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+li:hover {
+	font-weight: 800;
+}
+/* ---------------------------------------------------------------------------------- */
+.timeline {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.timeline::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	background-color: rgba(111, 107, 107, 0.368);
+	top: 0; bottom: 0; left: 50%;
+	margin-left: -3px;
+}
+
+.container {
+	position: relative;
+	background-color: inherit;
+	width: 84.5%;
+}
+
+.left {
+	left: -40%;
+}
+
+.right {
+	left: 55%;
+}
+
+.content {
+	padding: 20px 30px;
+	background-color: rgba(0, 0, 0, 0.519);
+	position: relative;
+	border-radius: 6px;
+	color: white;
+}
+
+.flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	perspective: 1000px;
+  }
+
+.flip-card-inner {
+	position: relative;
+	width: 100%; height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%; height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+}
+  
+.flip-card-front {
+	background-color: rgba(0, 0, 0, 0.519);
+	color: white;
+	border-radius: 10px;
+}
+
+.flip-card-back {
+	background-color: rgba(0, 0, 0, 0.519);
+	color: white;
+	transform: rotateY(180deg);
+	border-radius: 10px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* 
+.others {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 100px; margin-top: 70px;
+}
+
+.others div{
+	display: flex;
+	flex-direction: row;
+	gap: 10%;
+}
+
+.others article {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+} */
+
+
+
+/* ---------------------------------------------------------------------------------- */
+.project{
+	display: flex;
+	gap: 10px;
+}
+
+.project img {
+	height: 200px; width: 30%;
+	aspect-ratio: 3/1;
+}
+
+.project button img {
+	aspect-ratio: 1/1;
+	height: 17px;
+} 
+
+.description {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+button {
+	background: none;
+	padding: 8px 24px;
+	border-radius: 2px;
+	cursor: pointer;
+	font-family: "Poppins";
+	font-display: swap;
+	font-size: 16px;
+	position: relative;
+}
+
+.github-code img{
+	height: 25px; width: auto;
+}
+
+.links img {
+	height: 30px;
+}
+
+.links a {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+#github-btn {
+	background-color: #24292E;
+}
+
+#github-btn a{
+	color: white;
+}
+
+#email-btn {
+	background-color: beige;
+}
+
+#discord-btn {
+	background-color: #2D52A9;
+}
+
+#linkedin-btn {
+	background-color: white;
+}
+
+.copy {
+	position: absolute;
+	z-index: 1;
+}
+
+#discord-btn a {
+	color: white;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+
+	header {
+		gap: 23%;
+		backdrop-filter: none;
+	}
+
+	.presentation {
+		margin: 200px auto;
+	}
+
+	.presentation h1 {
+		font-size: 75px;
+	}
+
+	.presentation h2 {
+		font-size: 30px ;
+		margin-left: 10px;
+	}
+
+	.clock {
+		display: none;
+	}
+
+	.skills-career {
+		flex-direction: column;
+	}
+
+	.career {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.container {
+		margin-left: 20%;
+	}
+
+	.timeline::after {
+		  left: 31px;
+	}
+	  
+	.container {
+	  width: 100%;
+	  padding-left: 70px; padding-right: 25px;
+	}
+
+	.container::before {
+	  left: 60px;
+	  border: medium solid white;
+	  border-width: 10px 10px 10px 0;
+	  border-color: transparent white transparent transparent;
+	}
+	  
+	.left::after, .right::after {
+	  left: 15px;
+	}
+	  
+	.right {
+	  left: 0%;
+	}
+
+
+}
