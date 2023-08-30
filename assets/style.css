@@ -390,11 +390,19 @@ footer {
 @media screen and (max-width: 600px) {
 
 	a {
-		font-size: 20px;
+		font-size: 18px;
+	}
+
+	.logoKC {
+		font-size: 33px;
+	}
+
+	#K {
+		margin-right: -26px;
 	}
 
 	header {
-		gap: 15%;
+		gap: 10%;
 		backdrop-filter: none;
 	}
 
