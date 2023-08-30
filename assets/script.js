@@ -10,9 +10,7 @@ function clock() {
   const second = seconds * 6;
   
   document.querySelector('.heure').style.transform = `rotate(${hour}deg)`;
-
   document.querySelector('.minute').style.transform = `rotate(${minute}deg)`;
-
   document.querySelector('.seconde').style.transform = `rotate(${second}deg)`;
 }
 
@@ -25,6 +23,7 @@ function copyText() {
   /* Copy text into clipboard */
   navigator.clipboard.writeText
       ("#epouvaantail");
+  // text to confirm that is copied to the clipboard
   var btn = document.querySelector("#discord-btn");
   btn.insertAdjacentHTML("beforebegin", 
   '<div class="copy" ><p>copy to the clipboard</p></div>');
