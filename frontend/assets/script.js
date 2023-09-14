@@ -27,7 +27,7 @@ setInterval(clock, 1000);
 
 /* ---------------------------------------------------------------------------------- */
 
-const projects = fetch('http://localhost:3000/api/project',{ method:'get'})
+const projects = fetch('https://portfolio-whve.onrender.com/api/project',{ method:'get'})
 .then(projects => projects.json())
 .then(data => {
 	const projects = document.querySelector('.projects');
@@ -57,8 +57,8 @@ const projects = fetch('http://localhost:3000/api/project',{ method:'get'})
           )
         }
       }
-      generate(data)
     };
+    generate(data)
 });
 
 /* ---------------------------------------------------------------------------------- */
