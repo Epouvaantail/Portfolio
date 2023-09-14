@@ -30,17 +30,14 @@ main {
 	border-radius: 15px;
 }
 
-/* width */
 ::-webkit-scrollbar {
 	width: 10px;
-  }
-  
-/* Track */
+}
+
 ::-webkit-scrollbar-track {
 	border-radius: 10px;
 }
-   
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
 	background: gray; 
 	border-radius: 10px;
@@ -290,6 +287,7 @@ li:hover {
 
 /* ---------------------------------------------------------------------------------- */
 
+/* button animation */
 .offset {  
 	box-shadow: 
 	  0.3em 0.3em 0 0 #00000038,
@@ -312,12 +310,15 @@ button {
 	}
 }
 
+/* button animation */
 .slide:hover,
 .slide:focus {
   box-shadow: inset 11.5em 0 0 0 rgba(44, 43, 43, 0.427);
 }
 
 /* ---------------------------------------------------------------------------------- */
+
+/* project animation */
 
 .projects {
 	display: flex;
@@ -343,6 +344,7 @@ button {
 .project button img {
 	aspect-ratio: 1/1;
 	height: 17px;
+    width: 16%;
 } 
 
 .description {
@@ -501,7 +503,7 @@ footer {
 	}
 
 	#K {
-		margin-right: -25px;
+		margin-right: -27px;
 	}
 
 	header {
