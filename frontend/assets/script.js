@@ -1,3 +1,5 @@
+/* ---------------------------------------------------------------------------------- */
+
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -55,8 +57,8 @@ const projects = fetch('http://localhost:3000/api/project',{ method:'get'})
           )
         }
       }
+      generate(data)
     };
-    generate(data)
 });
 
 /* ---------------------------------------------------------------------------------- */
@@ -86,18 +88,7 @@ function lightDark() {
     }
   }
 
-  // if(sunMoon.src === 'http://127.0.0.1:5500/frontend/assets/images/logo/sun.png') {
-  //   sunMoon.src = "http://127.0.0.1:5500/frontend/assets/images/logo/moon.png";
-  //   sunMoon.style.filter = 'invert(100%)';
-  // }
-
-  // else if (sunMoon.src === 'http://127.0.0.1:5500/frontend/assets/images/logo/moon.png') {
-  //   sunMoon.src = 'http://127.0.0.1:5500/frontend/assets/images/logo/sun.png';
-  //   sunMoon.style.filter = 'invert(0%)';
-  // }
-
   var v = sunMoon.getAttribute("src");
-  console.log(v)
   if (v === "./assets/images/logo/sun.png") {
     v =  "./assets/images/logo/moon.png";
     sunMoon.style.filter = 'invert(100%)';
@@ -135,3 +126,4 @@ function copyText() {
 }
 
 /* ---------------------------------------------------------------------------------- */
+
