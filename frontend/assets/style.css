@@ -12,7 +12,7 @@ html {
 }
 
 body {
-	background-color: #e3e3d4;
+	background-color: #dcdcd5;
 	color: black;
 }
 
@@ -484,6 +484,10 @@ footer {
 		gap: 21%;
 	}
 	
+	.skills-career {
+		gap: 24%;
+	}
+
 	.project img {
 		height: 378px;
 		width: 90%;
@@ -510,7 +514,7 @@ footer {
 		gap: 10%;
 	}
 
-	.logo-header {
+	.logo-header a{
 		display: none;
 	}
 
