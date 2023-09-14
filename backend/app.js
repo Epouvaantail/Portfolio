@@ -18,7 +18,7 @@ app.use('/api/project', (req, res, next) => {
             imageUrl: './assets/images/Riding-cities.png',
             description: 'Mission : actualiser la page Internet de Riding Cities de la façon suivante :<br/> - Créer une nouvelle section, “Les membres fondateurs”, avec les noms et photos des créateurs de l’association.<br/> - Modifier la section comprenant le bouton “Télécharger le planning de cours” pour ajouter un titre et deux boutons permettant de télécharger deux plannings de cours différents (un pour les enfants et un pour les adultes).',
             code: 'https:/github.com/Epouvaantail/Projet_2',
-            site: 'https:/epouvaantail.github.io/Projet_2/',
+            site: 'https:/epouvaantail.github.io/Projet_2',
             languages: '<li>HTML5</li> <li>CSS3</li>',
         },
         {
@@ -27,7 +27,7 @@ app.use('/api/project', (req, res, next) => {
             imageUrl: './assets/images/Booki.png',
             description: 'L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.<br/> Intégrer l&lsquo;interface du site avec du code HTML et CSS. Collaboration avec la CTO et l’UI designer.',
             code: 'https:/github.com/Epouvaantail/Projet_3',
-            site: 'https:/epouvaantail.github.io/Projet_3/',
+            site: 'https:/epouvaantail.github.io/Projet_3',
             languages: '<li>HTML5</li> <li>CSS3</li> <li>Responsive</li>',
         },
         {
@@ -36,7 +36,7 @@ app.use('/api/project', (req, res, next) => {
             imageUrl: './assets/images/Ohmyfood.png',
             description: 'La mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques.<br/> En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée.',
             code: 'https:/github.com/Epouvaantail/Projet_4',
-            site: 'https:/epouvaantail.github.io/Projet_4/',
+            site: 'https:/epouvaantail.github.io/Projet_4',
             languages: '<li>HTML5</li> <li>CSS3</li> <li>Sass</li> <li>Responsive</li> <li>Animation</li>'
         },
         {
@@ -45,7 +45,7 @@ app.use('/api/project', (req, res, next) => {
             imageUrl: './assets/images/Printit.png',
             description: 'Amélioration d&lsquo;un site statique (HTML CSS) d&lsquo;une imprimerie <br/>en y ajoutant un carousel à défilement automatique et manuel.',
             code: 'https:/github.com/Epouvaantail/Projet_5',
-            site: 'https:/epouvaantail.github.io/Projet_5/',
+            site: 'https:/epouvaantail.github.io/Projet_5',
             languages:'<li>HTML5</li> <li>CSS3</li> <li>JavaScript</li>',
         },
         {
@@ -72,7 +72,7 @@ app.use('/api/project', (req, res, next) => {
             imageUrl: './assets/images/Nina-Carducci.png',
             description: 'Optimisation globale du site tant sur les performances que sur le SEO. <br/> Référencement local en utilisant Schema.org<br/> Metas pour les réseaux sociaux<br/> Accessibilité du site<br/> Référencement local<br/> Rapport d’optimisation détaillé<br/>',
             code: 'https:/github.com/Epouvaantail/Projet_9',
-            site: 'https:/epouvaantail.github.io/Projet_9/',
+            site: 'https:/epouvaantail.github.io/Projet_9',
             languages: '<li>HTML5</li> <li>CSS3</li> <li>JavaScript</li> <li>SEO</li> <li>Wave</li> <li>Schema.org</li> <li>Responsive</li> <li>Lighthouse</li>',
         },
         {
@@ -90,7 +90,7 @@ app.use('/api/project', (req, res, next) => {
             imageUrl: './assets/images/Argent-bank.png',
             description: 'Créer l’application web complète et responsive avec React et<br/> utiliser Redux pour gérer le state de l&lsquo;ensemble de l&lsquo;application.<br/> Fonctionnalités:<br/> - L&lsquo;utilisateur peut visiter la page d&lsquo;accueil.<br/> - Il peut se connecter au système.<br/> - Il peut se déconnecter du système.<br/> - Il ne peut voir les informations relatives à son propre profil uniquement s&lsquo;être connecté avec succès.<br/> - Il ne peut pas modifier son nom ni son prénom, mais il peut modifier son pseudo.<br/>',
             code: 'https:/github.com/Epouvaantail/Projet_10',
-            site: 'HTML',
+            site: '',
             languages: '<li>HTML5</li> <li>CSS3</li> <li>JavaScript</li> <li>NodeJS</li> <li>REACT</li> <li>JSX</li> <li>ReactRouter</li> <li>Redux</li> <li>MongoDB</li> <li>DevTools</li>',
         },
     ]
