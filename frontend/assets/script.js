@@ -114,16 +114,16 @@ function noHover(x) {
 
 /* ---------------------------------------------------------------------------------- */
 
-function copyText() {
-  /* Copy text into clipboard */
-  navigator.clipboard.writeText
-      ("#epouvaantail");
-  // text to confirm that is copied to the clipboard
-  var btn = document.querySelector("#discord-btn");
-  btn.insertAdjacentHTML("beforebegin", 
-  '<div class="copy" ><p>copy to the clipboard</p></div>');
-  setTimeout('document.querySelector(".copy").remove(".copy")',1500)
-}
+// function copyText() {
+//   /* Copy text into clipboard */
+//   navigator.clipboard.writeText
+//       ("#epouvaantail");
+//   // text to confirm that is copied to the clipboard
+//   var btn = document.querySelector("#discord-btn");
+//   btn.insertAdjacentHTML("beforebegin", 
+//   '<div class="copy" ><p>copy to the clipboard</p></div>');
+//   setTimeout('document.querySelector(".copy").remove(".copy")',1500)
+// }
 
 /* ---------------------------------------------------------------------------------- */
 
