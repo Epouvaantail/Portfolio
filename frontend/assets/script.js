@@ -35,7 +35,7 @@ const projects = fetch('https://portfolio-whve.onrender.com/api/project',{ metho
       function generate(data) {
         for (let d in data){
           projects.insertAdjacentHTML('beforeend', `
-            <div class="project" id="${data[d].id}">
+            <div class="project tile" id="${data[d].id}">
               <img src="${data[d].imageUrl}" alt="${data[d].title}">
                 <div class="description">
                   <p>${data[d].description}</p>
@@ -58,7 +58,23 @@ const projects = fetch('https://portfolio-whve.onrender.com/api/project',{ metho
         }
       }
     };
+    console.log(data)
     generate(data)
+    
+    let elementsArray = document.querySelectorAll('.tile');
+    window.addEventListener('scroll', fadeIn ); 
+    function fadeIn() {
+      for (var i = 0; i < elementsArray.length; i++) {
+        var elem = elementsArray[i]
+        var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+        if (distInView < 0) {
+            elem.classList.add("inView");
+        } else {
+            elem.classList.remove("inView");
+        }
+      }
+    }
+  fadeIn();
 });
 
 /* ---------------------------------------------------------------------------------- */
@@ -126,4 +142,3 @@ function noHover(x) {
 // }
 
 /* ---------------------------------------------------------------------------------- */
-
