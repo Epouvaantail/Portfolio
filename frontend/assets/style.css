@@ -49,7 +49,7 @@ header {
 	display: flex;
 	align-items: center;
 	gap: 29%;
-	height: 60px; width:100%;
+	height: 60px; width:90%;
 	position: fixed;
 	backdrop-filter: blur(1px);
 	z-index: 2;
@@ -337,8 +337,8 @@ button {
 /* project animation */
 
 .tile {
-    -webkit-transform: translateY(150px) rotate(-5deg) translateZ(0);
-    transform: translateY(150px) rotate(-5deg) translateZ(0);
+    -webkit-transform: translateY(50px) rotate(0deg) translateZ(0);
+    transform: translateY(50px) rotate(0deg) translateZ(0);
     -webkit-transition-delay: .3s;
     -o-transition-delay: .3s;
     transition-delay: .3s;
@@ -347,6 +347,7 @@ button {
     transition: .4s;
     opacity: 0;
 }
+
 .bottom-right.inView {
     opacity: 1;
     -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
@@ -566,6 +567,10 @@ footer {
 
 	.presentation h1 {
 		font-size: 75px;
+	}
+
+	.presentation h1::before {
+		display: none;
 	}
 
 	.presentation h2 {

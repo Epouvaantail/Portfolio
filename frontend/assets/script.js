@@ -58,7 +58,6 @@ const projects = fetch('https://portfolio-whve.onrender.com/api/project',{ metho
         }
       }
     };
-    console.log(data)
     generate(data)
     
     let elementsArray = document.querySelectorAll('.tile');
