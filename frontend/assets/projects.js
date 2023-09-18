@@ -24,7 +24,6 @@ for (let d in data) {
         <hr>`
     )
 }
-  
 
 let elementsArray = document.querySelectorAll('.tile');
 window.addEventListener('scroll', fadeIn ); 
