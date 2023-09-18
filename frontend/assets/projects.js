@@ -3,7 +3,7 @@ import data from "./projects.json" assert { type:"json" };
 const projects = document.querySelector('.projects');
 for (let d in data) {
     projects.insertAdjacentHTML('beforeend', `
-        <div class="project reveal" id="${data[d].id}">
+        <div class="project" id="${data[d].id}">
             <img src="${data[d].imageUrl}" alt="${data[d].title}">
             <div class="description">
                 <p>${data[d].description}</p>
