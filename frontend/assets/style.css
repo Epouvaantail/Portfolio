@@ -629,6 +629,15 @@ footer {
 		filter: contrast(0.8);
 	}
 
+	button {
+		padding:6px 17px;
+		margin-left: 11px;
+	}
+
+	.project button img {
+		width: 17px;
+	}
+
 	.description {
 		width: 100%;
 	}
