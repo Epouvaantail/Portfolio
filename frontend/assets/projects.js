@@ -3,7 +3,7 @@ import data from "./projects.json" assert { type:"json" };
 const projects = document.querySelector('.projects');
 for (let d in data) {
     projects.insertAdjacentHTML('beforeend', `
-        <div class="project tile" id="${data[d].id}">
+        <div class="project reveal" id="${data[d].id}">
             <img src="${data[d].imageUrl}" alt="${data[d].title}">
             <div class="description">
                 <p>${data[d].description}</p>
@@ -25,18 +25,21 @@ for (let d in data) {
     )
 }
 
-let elementsArray = document.querySelectorAll('.tile');
-window.addEventListener('scroll', fadeIn ); 
-function fadeIn() {
-    for (var i = 0; i < elementsArray.length; i++) {
-        var elem = elementsArray[i]
-        var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
-        if (distInView < 0) {
-            elem.classList.add("inView");
-        } else {
-            elem.classList.remove("inView");
-        }
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
     }
-}
-  fadeIn();
+  }
+window.addEventListener("scroll", reveal);
+
+// To check the scroll position on page load
+reveal();
 
