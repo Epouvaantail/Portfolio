@@ -91,7 +91,7 @@ app.use('/api/project', (req, res, next) => {
             description: 'Créer l’application web complète et responsive avec React et<br/> utiliser Redux pour gérer le state de l&lsquo;ensemble de l&lsquo;application.<br/> Fonctionnalités:<br/> - L&lsquo;utilisateur peut visiter la page d&lsquo;accueil.<br/> - Il peut se connecter au système.<br/> - Il peut se déconnecter du système.<br/> - Il ne peut voir les informations relatives à son propre profil uniquement s&lsquo;être connecté avec succès.<br/> - Il ne peut pas modifier son nom ni son prénom, mais il peut modifier son pseudo.<br/>',
             code: 'https://github.com/Epouvaantail/Projet_10',
             site: '',
-            languages: '<li>HTML5</li> <li>CSS3</li> <li>JavaScript</li> <li>NodeJS</li> <li>REACT</li> <li>JSX</li> <li>ReactRouter</li> <li>Redux</li> <li>MongoDB</li> <li>DevTools</li>',
+            languages: '<li>HTML5</li> <li>CSS3</li> <li>JavaScript</li> <li>NodeJS</li> <li>React</li> <li>JSX</li> <li>ReactRouter</li> <li>Redux</li> <li>MongoDB</li> <li>DevTools</li>',
         },
     ]
     res.status(200).json(projects);
