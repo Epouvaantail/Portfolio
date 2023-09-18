@@ -426,8 +426,16 @@ button {
 	margin-left: 20px;
 }
 
+.github-code a {
+	color: black;
+}
+
 .site {
 	display: inline;
+}
+
+.site a {
+	color: black;
 }
 
 #project6 .site{
