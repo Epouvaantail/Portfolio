@@ -1,4 +1,5 @@
 import data from "./projects.json" assert { type:"json" };
+alert(data)
 
 const projects = document.querySelector('.projects');
 for (let d in data) {
