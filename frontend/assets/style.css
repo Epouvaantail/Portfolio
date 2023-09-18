@@ -48,7 +48,7 @@ main {
 header {
 	display: flex;
     align-items: center;
-    gap: 29%;
+    gap: 28%;
     height: 60px;
     width: 100%;
     position: fixed;
