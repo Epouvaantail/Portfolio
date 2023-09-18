@@ -60,7 +60,6 @@ header {
 .navbar {
 	display: flex;
 	gap: 13px;
-	margin-left: 10px;
 }
 
 a {
@@ -342,23 +341,16 @@ button {
 
 /* project animation */
 
-.tile {
-    -webkit-transform: translateY(50px) rotate(0deg) translateZ(0);
-    transform: translateY(50px) rotate(0deg) translateZ(0);
-    -webkit-transition-delay: .3s;
-    -o-transition-delay: .3s;
-    transition-delay: .3s;
-    -webkit-transition: .4s;
-    -o-transition: .4s;
-    transition: .4s;
-    opacity: 0;
-}
-
-.inView {
-    opacity: 1;
-    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
-    transform: translateY(0px) rotate(0deg) translateZ(0);
-}
+.reveal{
+	position: relative;
+	transform: translateY(50px);
+	opacity: 0;
+	transition: 2s all ease;
+  }
+  .reveal.active{
+	transform: translateY(0);
+	opacity: 1;
+  }
 
 .projects {
 	display: flex;
@@ -402,6 +394,12 @@ button {
 
 .description p {
 	margin-left: 10px;
+}
+
+.projectFooter {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .langTools {
