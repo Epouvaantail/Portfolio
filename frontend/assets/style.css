@@ -143,6 +143,7 @@ a {
 
 .presentation button {
 	background-color: white;
+	color: black;
 	margin-left: 20px;
 	border-radius: 3px;
 }
@@ -489,14 +490,12 @@ hr {
 
 #email-btn {
 	background-color: beige;
+	color: black;
 }
-
-/* #discord-btn {
-	background-color: #2D52A9;
-} */
 
 #linkedin-btn {
 	background-color: white;
+	color: black;
 }
 
 /* .copy {
