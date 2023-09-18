@@ -47,12 +47,14 @@ main {
 
 header {
 	display: flex;
-	align-items: center;
-	gap: 29%;
-	height: 60px; width:90%;
-	position: fixed;
-	backdrop-filter: blur(1px);
-	z-index: 2;
+    align-items: center;
+    gap: 29%;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(1px);
+    z-index: 2;
+    justify-content: center;
 }
 
 .navbar {
@@ -66,6 +68,7 @@ a {
 	color: inherit;
 	font-size: 20px;
 	font-weight: 900;
+	cursor: pointer;
 }
 
 .logoKC{
@@ -86,6 +89,7 @@ a {
 }
 
 .logo-header img {
+	margin-top: 10px;
 	height: 33px;
 	filter: grayscale(100%);
 }
@@ -138,6 +142,7 @@ a {
 }
 
 .presentation button {
+	background-color: white;
 	margin-left: 20px;
 	border-radius: 3px;
 }
@@ -348,11 +353,6 @@ button {
     opacity: 0;
 }
 
-.bottom-right.inView {
-    opacity: 1;
-    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
-    transform: translateY(0px) rotate(0deg) translateZ(0);
-}
 .inView {
     opacity: 1;
     -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
@@ -458,7 +458,7 @@ hr {
 /* ---------------------------------------------------------------------------------- */
 
 #links {
-	margin-top: 200px;
+	margin-top: 80px;
 }
 
 .links button {
@@ -555,6 +555,8 @@ footer {
 
 	header {
 		gap: 10%;
+		width: 90%;
+		justify-content: space-around;
 	}
 
 	.logo-header a{
@@ -660,4 +662,10 @@ footer {
 		position: relative;
 	}
 
+}
+
+@media screen and (max-width: 320px) {
+	.lightDark {
+		display: none;
+	}
 }
