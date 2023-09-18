@@ -341,16 +341,16 @@ button {
 
 /* project animation */
 
-.reveal{
+/* .reveal{
 	position: relative;
-	transform: translateY(100px);
+	transform: translateY(50px);
 	opacity: 0;
 	transition: 2s all ease;
 }
 .reveal.active{
 	transform: translateY(0);
 	opacity: 1;
-}
+} */
 
 .projects {
 	display: flex;
