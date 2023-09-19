@@ -45,6 +45,67 @@ main {
 
 /* ---------------------------------------------------------------------------------- */
 
+.loader {
+    position: fixed;
+	display:flex;
+  	justify-content:center;
+  	gap:80%;
+	font-family: 'Segoe UI', sans-serif;
+  	font-size:80px;
+	font-weight: 500;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: #dcdcd5;
+    animation: loader .01s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#k1 {
+	position:relative;
+	animation-name: k;
+	animation-duration: 4s;
+	animation-delay: 0s;
+  
+}
+  
+#c1 {
+	position:relative;
+	animation-name: c;
+	animation-duration: 4s;
+	animation-delay: 0s;
+  
+}
+
+@keyframes loader {
+	0%   { opacity: 1 ; }
+	25%  { opacity: 0.25; }
+	50%  { opacity: 0.5; }
+	75%  { opacity: 0.75; }
+	100% { opacity: 0; z-index: -10;}
+}
+  
+@keyframes k {
+	0%   { left:0px; }
+	50% { left:-42%; }
+	100% { left: -42%; }
+}
+  
+@keyframes c {
+	0%   { left: 0px; }
+	50% { left: 40.5%; }
+	100% { left: 40.5%; }
+}
+
+/* ---------------------------------------------------------------------------------- */
+
 header {
 	display: flex;
     align-items: center;
@@ -122,18 +183,6 @@ a {
 	font-weight: 400;
 	margin-bottom: 0;
 	border-top: 0;
-}
-
-.presentation h1::before {
-	width: 47px; 
-    column-count: 1; 
-    column-width: 15px;
-	left: 60px;
-	content: "";
-    font-size: 36px;
-	font-weight: 700;
-    position: absolute;
-    color: black;
 }
 
 .presentation h2 {
