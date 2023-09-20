@@ -418,13 +418,15 @@ button {
     width: 70%;
     aspect-ratio: 3/1;
     filter: contrast(0.8);
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px 100px 5px 100px;
 }
 
 .project button img {
 	aspect-ratio: 1/1;
 	height: 17px;
     width: 16%;
+	filter: none;
+	border-radius: 0;
 } 
 
 .description {
@@ -436,8 +438,6 @@ button {
 	background-color: rgba(245, 245, 245, 0.204); backdrop-filter: blur(10px);
 	font-size:18px;
 	display: inline;
-	flex-direction: column;
-	justify-content: space-between;
 }
 
 .description p {
