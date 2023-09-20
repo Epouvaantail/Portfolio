@@ -419,7 +419,6 @@ button {
     width: 70%;
     aspect-ratio: 3/1;
     filter: contrast(0.8);
-    border-radius: 5px 100px 5px 100px;
 }
 
 .project button img {
