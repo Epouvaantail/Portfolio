@@ -48,7 +48,7 @@
         "id": "project8",
         "title": "Kasa",
         "imageUrl": "./assets/images/Kasa.webp",
-        "description": "Démarrer le projet React et développer l’ensemble de l’application, les composants React,<br/> les routes React Router, en suivant les maquettes Figma (responsives)<br/> Et ce avec un code de qualité.",
+        "description": "Développement d'une application de location immobilière en React, et composants React,<br/> les routes React Router, en suivant les maquettes Figma (responsives).",
         "code": "https://github.com/Epouvaantail/Projet_8",
         "site": "",
         "languages": "<li>HTML5</li> <li>CSS3</li> <li>JavaScript</li> <li>JSON</li> <li>REACT</li> <li>JSX</li> <li>ReactRouter</li>"
