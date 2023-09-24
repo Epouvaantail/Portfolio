@@ -138,3 +138,14 @@ function noHover(x) {
 }
 
 /* ---------------------------------------------------------------------------------- */
+
+function copyText() {
+  /* Copy text into clipboard */
+  navigator.clipboard.writeText
+      ("coutouzis.kilian@gmail.com");
+  // text to confirm that is copied to the clipboard
+  var btn = document.querySelector("#email-btn");
+  btn.insertAdjacentHTML("beforebegin", 
+  '<div class="copy" ><p>copy to the clipboard</p></div>');
+  setTimeout('document.querySelector(".copy").remove(".copy")',1500)
+}
