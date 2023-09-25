@@ -218,7 +218,7 @@ a {
 
 .minute, .heure {
 	position: absolute;
-	height: 100px; width: 6px;
+	height: 96px; width: 6px;
 	margin: auto;
 	top: -28.5%; left: 0;	bottom: 0; right: 0;
 	transform-origin: bottom center;
@@ -292,12 +292,14 @@ ul {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 30px;
+	gap: 25px;
+	justify-content: center;
 }
 
 li {
 	font-size: 24px;
 	font-weight: 400;
+	width: 104px;
 	display: flex;
 	flex-direction: column-reverse;
 	align-items: center;
@@ -412,6 +414,7 @@ li img {
 	color: white;
 	transform: rotateY(180deg);
 	border-radius: 10px;
+	height: 200px;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -432,7 +435,7 @@ li img {
 
   
 button {
-	transition: 0.65s;
+	transition: 1.15s;
 	&:hover,
 	&:focus { 
 	  border-color: rgb(0, 0, 0);
@@ -454,11 +457,12 @@ button {
 	transform: translateY(50px);
 	opacity: 0;
 	transition: 2s all ease;
-  }
-  .reveal.active{
+}
+
+.reveal.active{
 	transform: translateY(0);
 	opacity: 1;
-  }
+}
 
 .projects {
 	display: flex;
@@ -520,18 +524,21 @@ button {
 .langTools li {
 	list-style-type: none;
 	padding: 5px;
+	width: auto;
 }
 
 button {
 	background: none;
 	padding: 8px 24px;
-	border-radius: 2px;
+	border-radius: 3px 20px 3px 3px;
 	font-family: 'Rationale', sans-serif;
 	cursor: pointer;
 	font-display: swap;
-	font-size: 16px;
+	font-size: 18px;
+	font-weight: 600;
 	position: relative;
 	margin-left: 20px;
+	border: 2px solid black;
 }
 
 .github-code a {
@@ -752,6 +759,14 @@ footer {
 	  	border-width: 10px 10px 10px 0;
 	  	border-color: transparent white transparent transparent;
 	}
+
+	.container h3 {
+		margin: 10px;
+	}
+
+	.container p {
+		margin: 10px;
+	}
 	  
 	.left::after, .right::after {
 	  	left: 15px;
@@ -809,4 +824,14 @@ footer {
 		position: relative;
 	}
 
+}
+
+@media screen and (max-width: 400px) {
+	.right {
+		height: 235px;
+	}
+
+	.flip-card-back {
+		height: 269px;
+	}
 }

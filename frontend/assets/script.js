@@ -46,13 +46,13 @@ const projects = fetch('./assets/projects.json',{ method:'get'})
                   <p>${data[d].description}</p>
 			            <div class="projectFooter">
 			              <button onClick="window.location.href = '${data[d].code}'" class="github-code slide">
-			                <a id='a' href="${data[d].code}">
+			                <a' href="${data[d].code}">
 		  	                <img src="./assets/images/logo/github-mark.png" alt="logo-github"/>
 		                    Voir le code
 		                  </a>
 				            </button>
 				            <button onClick="window.location.href = '${data[d].site}/'" class="site slide">
-				              <a id='a' href="${data[d].site}/">Voir le site</a>
+				              <a' href="${data[d].site}/">Voir le site</a>
 			              </button>
 		              </div>
 				        </div>
@@ -73,7 +73,8 @@ const projects = fetch('./assets/projects.json',{ method:'get'})
       var elementVisible = 50;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
-      } else {
+      }
+      else {
         reveals[i].classList.remove("active");
       }
     }
