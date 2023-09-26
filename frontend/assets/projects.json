@@ -3,7 +3,7 @@
         "id": "project2",
         "title": "Riding Cities",
         "imageUrl": "./assets/images/Riding-cities.webp",
-        "description": "Mission : actualiser la page Internet de Riding Cities de la façon suivante :<br/> - Créer une nouvelle section, “Les membres fondateurs”, avec les noms et photos des créateurs de l’association.<br/> - Modifier la section comprenant le bouton “Télécharger le planning de cours” pour ajouter un titre et deux boutons permettant de télécharger deux plannings de cours différents (un pour les enfants et un pour les adultes).",
+        "description": "Actualiser la page Internet de Riding Cities de la façon suivante :<br/> - Créer une nouvelle section, “Les membres fondateurs”, avec les noms et photos des créateurs de l’association.<br/> - Modifier la section comprenant le bouton “Télécharger le planning de cours” pour ajouter un titre et deux boutons permettant de télécharger deux plannings de cours différents (un pour les enfants et un pour les adultes).",
         "code": "https://github.com/Epouvaantail/RidingCities",
         "site": "https://epouvaantail.github.io/RidingCities",
         "languages": "<li>HTML5</li> <li>CSS3</li>"
