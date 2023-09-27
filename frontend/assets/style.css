@@ -620,12 +620,12 @@ hr {
 	color: black;
 }
 
-/* .copy {
+.copy {
 	position: absolute;
 	z-index: 1;
 }
 
-#discord-btn a {
+/* #discord-btn a {
 	color: white;
 	font-family: 'Segoe UI', sans-serif;
 	font-weight: 400;
@@ -688,7 +688,11 @@ footer {
 
 	.right {
 		left: 0;
-		margin-bottom: 0;
+		margin-bottom: 20;
+	}
+
+	.flip-card-front {
+		height: 100%;
 	}
 
 }
@@ -782,6 +786,10 @@ footer {
 		padding-bottom: 40px;
 	}
 
+	.flip-card-front {
+		height: auto;
+	}
+
 	.project {
 		flex-direction: column;
 		border-bottom: 2px solid black;
@@ -792,6 +800,14 @@ footer {
 		height: 200px; width: 100%;
 		aspect-ratio: 3/1;
 		filter: contrast(0.8);
+	}
+
+	ul {
+		padding: 0;
+	}
+
+	.langTools li {
+		font-size: 15px;
 	}
 
 	button {
