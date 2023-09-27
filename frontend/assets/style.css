@@ -534,7 +534,6 @@ button {
 	border-radius: 3px 20px 3px 3px;
 	font-family: 'Rationale', sans-serif;
 	cursor: pointer;
-	font-display: swap;
 	font-size: 18px;
 	font-weight: 600;
 	position: relative;
@@ -584,22 +583,24 @@ hr {
 	margin-top: 80px;
 }
 
-.links button {
+.links-btn{
+	display: flex;
+	flex-direction: row;
+}
+
+.links-btn button {
 	border-radius: 5px;
-}
-
-.links button:hover {
-	filter: brightness(80%);
-}
-
-.links img {
-	height: 30px;
-}
-
-.links a {
 	display: flex;
 	align-items: center;
 	gap: 8px;
+}
+
+.links-btn button:hover {
+	filter: brightness(80%);
+}
+
+.links-btn img {
+	height: 30px;
 }
 
 #github-btn {

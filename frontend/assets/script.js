@@ -46,13 +46,11 @@ const projects = fetch('./assets/projects.json',{ method:'get'})
                   <p>${data[d].description}</p>
 			            <div class="projectFooter">
 			              <button onClick="window.location.href = '${data[d].code}'" class="github-code slide">
-			                <a' href="${data[d].code}">
 		  	                <img src="./assets/images/logo/github-mark.png" alt="logo-github"/>
 		                    Voir le code
-		                  </a>
 				            </button>
 				            <button onClick="window.location.href = '${data[d].site}/'" class="site slide">
-				              <a' href="${data[d].site}/">Voir le site</a>
+                      Voir le site
 			              </button>
 		              </div>
 				        </div>
