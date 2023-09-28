@@ -165,7 +165,7 @@ a {
 }
 
 .lightDark:hover {
-	rotate: 360deg;
+	transform: rotate(360deg);
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -324,19 +324,19 @@ li img {
 
 @keyframes wiggle {
 	0% {
-	  rotate:0;
+	  transform:rotate(0);
 	}
 	25% {
-	  rotate: 25deg;
+	  transform:rotate(25deg);
 	}
 	50% {
-	  rotate: -25deg;
+	  transform:rotate(-25deg);
 	}
 	75% {
-		rotate: 10deg;
+		transform:rotate(10deg);
 	}
 	100% {
-	  rotate: 0;
+	  transform:rotate(0);
 	}
   }
 
@@ -487,7 +487,6 @@ button {
 }
 
 .project button img {
-	aspect-ratio: 1/1;
 	height: 17px;
     width: 16%;
 	filter: none;
@@ -586,6 +585,8 @@ hr {
 .links-btn{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+    gap: 10px;
 }
 
 .links-btn button {
@@ -643,6 +644,10 @@ footer {
 	
 	header {
 		gap: 21%;
+	}
+
+	.logo-header {
+		display: none;
 	}
 
 	.presentation {
