@@ -175,7 +175,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	gap: 50px;
+	gap: 30%;
 }
 
 .presentation h1 {
@@ -254,15 +254,26 @@ a {
 .dot {
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;
-	width: 12px; height: 12px;
+	width: 10px; height: 10px;
 	background: white;
 	border: 2px solid #1b1b1b;
-	border-radius: 20%;
+	border-radius: 50%;
 	margin: auto;
 }
 
 /* ---------------------------------------------------------------------------------- */
 
+.box {
+	border: 1px solid gray;
+	border-radius: 0.75rem;
+	padding: 1.5rem;
+	background-color: transparent;
+	box-shadow: black;
+	display: flex;
+	flex-direction: row;
+}
+
+/* ---------------------------------------------------------------------------------- */
 .skills {
 	display: flex;
 	flex-direction: column;
@@ -606,9 +617,6 @@ hr {
 
 #github-btn {
 	background-color: #24292E;
-}
-
-#github-btn a{
 	color: white;
 }
 
