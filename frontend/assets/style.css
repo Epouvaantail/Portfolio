@@ -271,6 +271,12 @@ a {
 	box-shadow: black;
 	display: flex;
 	flex-direction: row;
+	gap: 10%;
+	margin-bottom: 100px;
+}
+
+.service {
+	width: 35%;
 }
 
 /* ---------------------------------------------------------------------------------- */
